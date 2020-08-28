@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="survey.css">
+</head>
+
+<body >
+
+<h1 id="title" ><u>Customer Food Satisfaction Survey</u></h1>
+<fieldset>
+  <legend><b>Personal Details</b></legend><br>
+<label id="name-label"> Name: </label>
+<input id="name" type="text" placeholder="Enter Name" required><br><br>
+<label id="email-label"> Email: </label>
+<input id="email" type="email" placeholder="Enter Email" required><br><br>
+<label id="number-label"> Age: </label>
+<input id="number" type="number" placeholder="Age" min="15" max="60"><br><br>
+<label> How satisfied were you with our service today? </label><br>
+<select>
+  <option value="very satisfied">Very Satisfied</option>
+  <option value="satisfied">Satisfied</option>
+  <option value="not satisfied">Not Satisfied</option><br>
+</select><br><br> 
+</fieldset>
+<br><br>
+<fieldset>
+        <legend> <b>Is this the first time you have used our services? </b></legend>
+         <label for="Yes"><input type="radio" name="options" required value="Yes"> Yes</label>
+         <label for="No"><input type="radio" name="options" required value="No"> No</label>
+</fieldset>
+<fieldset>
+    <legend><b>Food cuisine </b></legend>
+    Cuisine you liked the most:<br>
+    <input id="italian" type="checkbox" value="italian" /><label for="italian">Italian</label><br>
+    <input id="chinese" type="checkbox" value="chinese" /><label for="chinese">Chinese</label><br>
+    <input id="indian" type="checkbox" value="indian" /><label for="indian">Indian</label><br>
+    <input id="desert" type="checkbox" value="desert" /><label for="desert">Desert</label><br>
+</fieldset>
+<br>
+<fieldset>
+  <legend> <b>Ever faced late delivery? </b></legend>
+   <label for="Yes"><input type="radio" name="options1" required value="Yes"> Yes</label>
+   <label for="No"><input type="radio" name="options1" required value="No"> No</label>
+</fieldset>
+<br>
+<label>Suggestions, If any? (optional)</label><br>
+<textarea id="box" rows="5" columns="10" placeholder="Enter your comments and suggestions here....."></textarea><br>
+<button id="submit">Submit</button>
+</form>
+</body>
+</html>
+
